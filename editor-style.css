@@ -18,21 +18,21 @@
 }
 
 .editor-styles-wrapper .is-root-container,
-.editor-styles-wrapper .ys-home-main {
+.editor-styles-wrapper .ys-home-content {
 	width: 100%;
 	max-width: none;
 }
 
-.editor-styles-wrapper .ys-home-main > .alignwide,
+.editor-styles-wrapper .ys-home-content > .ys-shell,
 .editor-styles-wrapper .ys-shell {
 	width: 100%;
 	max-width: var(--ys-max) !important;
 	margin-inline: auto !important;
 }
 
-.editor-styles-wrapper .ys-home-main h1,
-.editor-styles-wrapper .ys-home-main h2,
-.editor-styles-wrapper .ys-home-main h3 {
+.editor-styles-wrapper .ys-home-content h1,
+.editor-styles-wrapper .ys-home-content h2,
+.editor-styles-wrapper .ys-home-content h3 {
 	font-family: Georgia, "Times New Roman", serif;
 	font-weight: 400;
 	letter-spacing: -.025em;
