@@ -1,0 +1,267 @@
+/*
+ * Gutenberg-only layout for the homepage pattern.
+ * Frontend container rules intentionally stay in style.css.
+ */
+:root {
+	--ys-ink: #17262b;
+	--ys-deep: #10343d;
+	--ys-paper: #f8f4ed;
+	--ys-line: #ded8cf;
+	--ys-gold: #b69569;
+	--ys-max: 1280px;
+}
+
+.editor-styles-wrapper {
+	background: #fbfaf7;
+	color: var(--ys-ink);
+	padding-inline: clamp(16px, 3vw, 48px);
+}
+
+.editor-styles-wrapper .is-root-container,
+.editor-styles-wrapper .ys-home-main {
+	width: 100%;
+	max-width: none;
+}
+
+.editor-styles-wrapper .ys-home-main > .alignwide,
+.editor-styles-wrapper .ys-shell {
+	width: 100%;
+	max-width: var(--ys-max) !important;
+	margin-inline: auto !important;
+}
+
+.editor-styles-wrapper .ys-home-main h1,
+.editor-styles-wrapper .ys-home-main h2,
+.editor-styles-wrapper .ys-home-main h3 {
+	font-family: Georgia, "Times New Roman", serif;
+	font-weight: 400;
+	letter-spacing: -.025em;
+}
+
+.editor-styles-wrapper .ys-hero {
+	position: relative;
+	display: grid;
+	grid-template-columns: minmax(0, 44fr) minmax(320px, 56fr);
+	align-items: center;
+	gap: clamp(24px, 4vw, 64px);
+	min-height: 500px;
+	padding: 52px 0 20px;
+}
+
+.editor-styles-wrapper .ys-hero::after {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	right: 0;
+	bottom: 0;
+	width: 54%;
+	height: 82%;
+	border-radius: 55% 45% 0 0;
+	background: radial-gradient(circle at 50% 30%, #f7efe3 0 44%, transparent 45%), linear-gradient(165deg, transparent 48%, #d8cebb 49% 63%, #506165 64% 78%, #183c43 79%);
+	pointer-events: none;
+}
+
+.editor-styles-wrapper .ys-hero__copy,
+.editor-styles-wrapper .ys-hero__media {
+	position: relative;
+	z-index: 1;
+	min-width: 0;
+}
+
+.editor-styles-wrapper .ys-hero h1 {
+	font-size: clamp(44px, 4.4vw, 68px);
+	line-height: .98;
+	margin: 0 0 20px;
+}
+
+.editor-styles-wrapper .ys-hero__media {
+	width: 100%;
+	min-height: 360px;
+	margin: 0;
+}
+
+.editor-styles-wrapper .ys-hero__media img {
+	display: block;
+	width: 100%;
+	height: 430px;
+	object-fit: contain;
+}
+
+.editor-styles-wrapper .ys-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 24px;
+}
+
+.editor-styles-wrapper .wp-block-button__link {
+	border: 1px solid var(--ys-deep);
+	border-radius: 2px;
+	background: var(--ys-deep);
+	color: #fff;
+	padding: 13px 30px;
+}
+
+.editor-styles-wrapper .is-style-outline .wp-block-button__link {
+	background: transparent;
+	color: var(--ys-deep);
+}
+
+.editor-styles-wrapper .ys-directions {
+	display: grid;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+	gap: 10px;
+	padding-block: 12px;
+}
+
+.editor-styles-wrapper .ys-card {
+	min-width: 0;
+	border: 1px solid var(--ys-line);
+	border-radius: 5px;
+	background: var(--ys-paper);
+	overflow: hidden;
+}
+
+.editor-styles-wrapper .ys-card figure {
+	height: 112px;
+	margin: 0;
+	background: linear-gradient(145deg, #eee6da, #d3dad4);
+}
+
+.editor-styles-wrapper .ys-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.editor-styles-wrapper .ys-card__body {
+	padding: 13px 14px 16px;
+}
+
+.editor-styles-wrapper .ys-card h3 {
+	font-size: 20px;
+	margin: 0 0 5px;
+}
+
+.editor-styles-wrapper .ys-card p {
+	font-size: 13px;
+	line-height: 1.35;
+	margin: 0;
+}
+
+.editor-styles-wrapper .ys-sr-only {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
+
+.editor-styles-wrapper .ys-quiz {
+	display: block;
+	padding: 25px 28px;
+	border-radius: 5px;
+	background: linear-gradient(100deg, #0b343b, #1d5055);
+	color: #fff;
+}
+
+.editor-styles-wrapper .ys-quiz__grid {
+	display: grid;
+	grid-template-columns: minmax(260px, 31fr) minmax(0, 69fr);
+	align-items: center;
+	gap: 20px;
+}
+
+.editor-styles-wrapper .ys-steps {
+	display: grid;
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: 8px;
+}
+
+.editor-styles-wrapper .ys-start {
+	display: grid;
+	grid-template-columns: minmax(170px, 190px) minmax(0, 1fr);
+	gap: 24px;
+	padding-block: 16px;
+}
+
+.editor-styles-wrapper .ys-posts .wp-block-post-template {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 18px;
+}
+
+.editor-styles-wrapper .ys-posts .wp-block-post-featured-image {
+	height: 145px;
+	margin-bottom: 7px;
+}
+
+.editor-styles-wrapper .ys-posts .wp-block-post-featured-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.editor-styles-wrapper .ys-bottom {
+	display: grid;
+	grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+	gap: 16px;
+	padding-block: 12px 30px;
+}
+
+.editor-styles-wrapper .ys-about,
+.editor-styles-wrapper .ys-contact {
+	min-width: 0;
+	border: 1px solid var(--ys-line);
+	border-radius: 5px;
+	background: var(--ys-paper);
+	overflow: hidden;
+}
+
+.editor-styles-wrapper .ys-about__grid {
+	display: grid;
+	grid-template-columns: minmax(220px, 40fr) minmax(0, 60fr);
+}
+
+.editor-styles-wrapper .ys-about__media {
+	min-height: 310px;
+	margin: 0;
+	background: linear-gradient(145deg, #e6dfd4, #cdd5cf);
+}
+
+.editor-styles-wrapper .ys-about__media img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.editor-styles-wrapper .ys-about__copy,
+.editor-styles-wrapper .ys-contact {
+	padding: 20px;
+}
+
+.editor-styles-wrapper .ys-benefits {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 10px;
+}
+
+@media (max-width: 1024px) {
+	.editor-styles-wrapper .ys-directions { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+	.editor-styles-wrapper .ys-hero { grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); }
+	.editor-styles-wrapper .ys-quiz__grid { grid-template-columns: 1fr; }
+	.editor-styles-wrapper .ys-bottom { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+	.editor-styles-wrapper { padding-inline: 14px; }
+	.editor-styles-wrapper .ys-hero { display: block; min-height: 0; padding-top: 32px; }
+	.editor-styles-wrapper .ys-hero__media { min-height: 260px; }
+	.editor-styles-wrapper .ys-directions { grid-template-columns: 1fr; }
+	.editor-styles-wrapper .ys-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.editor-styles-wrapper .ys-start,
+	.editor-styles-wrapper .ys-posts .wp-block-post-template,
+	.editor-styles-wrapper .ys-about__grid { grid-template-columns: 1fr; }
+	.editor-styles-wrapper .ys-buttons { flex-direction: column; }
+}

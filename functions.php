@@ -3,7 +3,7 @@ defined( 'ABSPATH' ) || exit;
 
 add_action( 'after_setup_theme', function () {
 	add_theme_support( 'editor-styles' );
-	add_editor_style( 'style.css' );
+	add_editor_style( 'editor-style.css' );
 	add_theme_support( 'align-wide' );
 	register_nav_menus( array( 'primary' => 'Главное меню', 'footer' => 'Меню в подвале' ) );
 } );

@@ -8,11 +8,11 @@
  * Description: Полная редактируемая структура главной страницы.
  */
 ?>
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
-<main class="wp-block-group">
+<!-- wp:group {"tagName":"main","className":"ys-home-main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group ys-home-main">
 
-<!-- wp:group {"className":"ys-hero ys-shell","layout":{"type":"default"}} -->
-<div class="wp-block-group ys-hero ys-shell">
+<!-- wp:group {"align":"wide","className":"ys-hero ys-shell","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide ys-hero ys-shell">
 <!-- wp:group {"className":"ys-hero__copy","layout":{"type":"default"}} -->
 <div class="wp-block-group ys-hero__copy">
 <!-- wp:heading {"level":1} -->
@@ -42,8 +42,8 @@
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","anchor":"directions","className":"ys-directions ys-shell","layout":{"type":"default"}} -->
-<section id="directions" class="wp-block-group ys-directions ys-shell">
+<!-- wp:group {"tagName":"section","align":"wide","anchor":"directions","className":"ys-directions ys-shell","layout":{"type":"default"}} -->
+<section id="directions" class="wp-block-group alignwide ys-directions ys-shell">
 <!-- wp:heading {"className":"ys-sr-only"} -->
 <h2 class="wp-block-heading ys-sr-only">Основные направления</h2>
 <!-- /wp:heading -->
@@ -73,8 +73,8 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","anchor":"quiz","className":"ys-quiz ys-shell","layout":{"type":"default"}} -->
-<section id="quiz" class="wp-block-group ys-quiz ys-shell">
+<!-- wp:group {"tagName":"section","align":"wide","anchor":"quiz","className":"ys-quiz ys-shell","layout":{"type":"default"}} -->
+<section id="quiz" class="wp-block-group alignwide ys-quiz ys-shell">
 <!-- wp:group {"className":"ys-quiz__grid","layout":{"type":"default"}} -->
 <div class="wp-block-group ys-quiz__grid">
 <!-- wp:group {"layout":{"type":"default"}} -->
@@ -89,8 +89,8 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","className":"ys-start ys-shell","layout":{"type":"default"}} -->
-<section class="wp-block-group ys-start ys-shell">
+<!-- wp:group {"tagName":"section","align":"wide","className":"ys-start ys-shell","layout":{"type":"default"}} -->
+<section class="wp-block-group alignwide ys-start ys-shell">
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading --><h2 class="wp-block-heading">С чего начать</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Если пока трудно понять, что с вами происходит, начните с этих материалов.</p><!-- /wp:paragraph --></div>
 <!-- /wp:group -->
@@ -100,8 +100,8 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"ys-bottom ys-shell","layout":{"type":"default"}} -->
-<div class="wp-block-group ys-bottom ys-shell">
+<!-- wp:group {"align":"wide","className":"ys-bottom ys-shell","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide ys-bottom ys-shell">
 <!-- wp:group {"tagName":"section","anchor":"about","className":"ys-about","layout":{"type":"default"}} -->
 <section id="about" class="wp-block-group ys-about">
 <!-- wp:group {"className":"ys-about__grid","layout":{"type":"default"}} -->
@@ -144,8 +144,8 @@
 </div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"className":"ys-page-legal ys-shell"} -->
-<p class="ys-page-legal ys-shell">Не является медицинской услугой</p>
+<!-- wp:paragraph {"align":"wide","className":"ys-page-legal ys-shell"} -->
+<p class="alignwide ys-page-legal ys-shell">Не является медицинской услугой</p>
 <!-- /wp:paragraph -->
 
 </main>
